@@ -1,0 +1,25 @@
+// Определяем переменные
+$primary-color: #2d54f5;
+$secondary-color: #383d49;
+
+// Стили для элементов
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #dedede;
+    color: #101010;
+}
+header {
+    margin-top: 200px;
+
+    text-align: center;
+    h1 {
+        color: $primary-color;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 800;
+    }
+    h3 {
+        color: $secondary-color;
+        font-weight: 400;
+        font-style: italic;
+    }
+}

@@ -12,7 +12,7 @@ class AuthenticateController extends Controller
     public function create() {
         return view('auth.login');
     }
-    
+
     public function store(LoginRequest $request)
     {
         $request->authenticate();

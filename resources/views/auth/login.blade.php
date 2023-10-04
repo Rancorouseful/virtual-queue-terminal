@@ -4,6 +4,9 @@
     <h2>Вход</h2>
     <form method="POST" action="{{ route('user.login') }}">
         @csrf
+        @error('email')
+        <div class="alert alert-danger">{{ $message }}</div>
+        @enderror
         <label for="email">Электронная почта</label>
         <input id="email" name="email" value="" type="email" placeholder="example@email.com"><br>
         <label for="username">Имя</label>
